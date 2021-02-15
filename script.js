@@ -55,6 +55,7 @@ search.addEventListener('keydown', (e) => {
 
 let showtime = () => {
     let  today = new Date();
-    time.textContent =  `${today.toLocaleString()}`;
+    time.textContent =  `${dateFns.format(today,'ddd DD MMM YYYY, H:m:s')}`;
 };
-setInterval( showtime, 0)
+setInterval( showtime, 1000)
+console.log();
