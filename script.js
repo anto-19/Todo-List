@@ -58,4 +58,3 @@ let showtime = () => {
     time.textContent =  `${dateFns.format(today,'ddd DD MMM YYYY, H:m:s')}`;
 };
 setInterval( showtime, 1000)
-console.log();
